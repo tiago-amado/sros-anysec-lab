@@ -18,7 +18,7 @@ echo -e "
 "
 
 
-## Test 2 - Disable Anysec r1 peer 2.2.2.2 & r2 peer 1.1.1.1
+## Test 2 - Disable Anysec r1 peer 10.0.0.2 & r2 peer 10.0.0.1
 gnmic -a r1:57400 -u admin -p admin --insecure set --update-path /configure/anysec/tunnel-encryption/encryption-group[group-name=EG_Anysec]/peer[peer-ip-address=10.0.0.2]/admin-state --update-value disable
 gnmic -a r2:57400 -u admin -p admin --insecure set --update-path /configure/anysec/tunnel-encryption/encryption-group[group-name=EG_Anysec]/peer[peer-ip-address=10.0.0.1]/admin-state --update-value disable
 
