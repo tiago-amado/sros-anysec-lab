@@ -8,8 +8,8 @@ mgmt:
 topology:
   kinds:
     vr-sros:
-      image: registry.srlinux.dev/pub/vr-sros:23.10.R1
-      license: /opt/nokia/sros/r23_license.key
+      image: registry.srlinux.dev/pub/vr-sros:24.3.R1
+      license: /opt/nokia/sros/r24_license.key
     linux:
       image: ghcr.io/hellt/network-multitool
 
